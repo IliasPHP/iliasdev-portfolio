@@ -32,14 +32,35 @@
             box-sizing: border-box;
         }
 
+        /* FIX 1: Add overflow safety to HTML root */
+        html {
+            width: 100%;
+            /* Ensure no tiny rendering gap exists */
+            box-sizing: border-box;
+            overflow-x: hidden;
+            /* Crucial containment layer */
+        }
+
         body {
+            font-family: var(--font-family);
+            background: var(--bg-dark);
+            color: var(--text-light);
+            /* Keep this existing rule, but ensure HTML also has it */
+            overflow-x: hidden;
+            line-height: 1.6;
+            position: relative;
+            /* FIX 2: Ensure the body doesn't try to shrink smaller than mobile content */
+            min-width: 320px;
+        }
+
+        /* body {
             font-family: var(--font-family);
             background: var(--bg-dark);
             color: var(--text-light);
             overflow-x: hidden;
             line-height: 1.6;
             position: relative;
-        }
+        } */
 
         /* Subtle Noise Overlay for texture */
         body::before {
@@ -1368,14 +1389,7 @@
 
         @media (max-width: 1024px) {
 
-            .skills-grid,
-            .services-grid,
-            .portfolio-grid,
-            .stats-grid,
-            .footer-content {
-                /* Added .stats-grid and .footer-content as they also use multi-column grids */
-                grid-template-columns: 1fr;
-            }
+
 
             .header {
                 padding: 15px 30px;
@@ -1437,16 +1451,6 @@
         }
 
         @media (max-width: 768px) {
-
-            .skills-grid,
-            .services-grid,
-            .portfolio-grid,
-            .stats-grid,
-            .footer-content {
-                /* Added .stats-grid and .footer-content as they also use multi-column grids */
-                grid-template-columns: 1fr;
-            }
-
             .header {
                 padding: 15px 20px;
             }
@@ -2099,10 +2103,12 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="email:ilias.elmabrak16@gmail.com" class="social-link" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/elmabrak-ilias-20b245193/" class="social-link"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/IliasPHP" class="social-link" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="contact-form animated-element slide-in-right">
@@ -2145,9 +2151,12 @@
                 <p>Passionate web developer creating digital experiences that make a difference. Let's build something
                     amazing together.</p>
                 <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mail:ilias.elmabrak16@gmail.com" class="social-link" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/elmabrak-ilias-20b245193/" class="social-link"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/IliasPHP" class="social-link" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="footer-section">
