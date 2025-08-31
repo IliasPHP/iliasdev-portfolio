@@ -1367,6 +1367,16 @@
         }
 
         @media (max-width: 1024px) {
+
+            .skills-grid,
+            .services-grid,
+            .portfolio-grid,
+            .stats-grid,
+            .footer-content {
+                /* Added .stats-grid and .footer-content as they also use multi-column grids */
+                grid-template-columns: 1fr;
+            }
+
             .header {
                 padding: 15px 30px;
             }
