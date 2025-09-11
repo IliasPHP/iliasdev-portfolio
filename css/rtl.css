@@ -1,0 +1,97 @@
+/* RTL Overrides for Arabic Language */
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    /* Ensure font consistency */
+}
+
+.header {
+    flex-direction: row-reverse;
+}
+
+.desktop-nav .nav-links {
+    flex-direction: row-reverse;
+}
+
+.desktop-nav .nav-links a i {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+.hero-text, .about-text, .contact-info, .service-card, .project-info {
+    text-align: right;
+}
+
+.hero-text h2::after, .about-text h2::after, .contact-info h2::after {
+    left: auto;
+    right: 0;
+    transform: translateX(0);
+}
+
+.hero-buttons, .tech-stack, .social-links, .project-links {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+.btn i {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.contact-item {
+    flex-direction: row-reverse;
+}
+
+.contact-item .icon {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.footer-content {
+    direction: rtl;
+}
+
+.footer-brand .social-links {
+    justify-content: flex-start;
+}
+
+.language-switcher {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.lang-flag {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.selected-lang .fa-chevron-down {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.lang-options {
+    right: auto;
+    left: 0;
+}
+
+@media (max-width: 1024px) {
+    .hero-content, .about-content, .contact-content {
+        flex-direction: column-reverse;
+    }
+
+    .hero-text, .about-text, .contact-info {
+        text-align: center;
+    }
+
+    .hero-text h2::after, .about-text h2::after, .contact-info h2::after {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+
+    .hero-buttons, .tech-stack, .social-links {
+        justify-content: center;
+    }
+}

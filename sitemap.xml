@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://iliasdev-portfolio-plum.vercel.app/</loc> <!-- IMPORTANT: Replace with your actual live domain URL -->
+    <lastmod>2025-08-04T12:00:00+00:00</lastmod> <!-- Update this date whenever you make significant changes to your portfolio -->
+    <priority>1.0</priority> <!-- Indicates this is the most important page on your site -->
+  </url>
+</urlset>
