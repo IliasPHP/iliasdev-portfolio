@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!-- The lang attribute will be set by JavaScript -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: Title and Description will be updated by JS -->
+    <title data-translate-key="metaTitle">Ilias El Mabrak | Expert Web Developer & WordPress Specialist | SEO & Custom
+        Plugins</title>
+    <meta name="description" data-translate-key="metaDescription"
+        content="Ilias El Mabrak is a passionate Web Developer and WordPress Expert specializing in custom themes, plugins, responsive design, and SEO optimization. Let's build your next digital success.">
+
+    <link rel="canonical" href="https://iliasdev-portfolio-plum.vercel.app/">
+
+    <!-- SEO: Hreflang tags for multi-language support -->
+    <link rel="alternate" hreflang="en" href="https://iliasdev-portfolio-plum.vercel.app/?lang=en" />
+    <link rel="alternate" hreflang="fr" href="https://iliasdev-portfolio-plum.vercel.app/?lang=fr" />
+    <link rel="alternate" hreflang="ar" href="https://iliasdev-portfolio-plum.vercel.app/?lang=ar" />
+    <link rel="alternate" hreflang="x-default" href="https://iliasdev-portfolio-plum.vercel.app/" />
+
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- RTL stylesheet will be added dynamically by JS for Arabic -->
+
+    <!-- Google Analytics & JSON-LD Schema -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3FNWRJBP3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-E3FNWRJBP3');
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ilias El Mabrak",
+      "url": "https://iliasdev-portfolio-plum.vercel.app/",
+      "sameAs": [ "https://www.linkedin.com/in/elmabrak-ilias-20b245193/", "https://github.com/IliasPHP", "mailto:ilias.elmabrak16@gmail.com" ],
+      "jobTitle": "Web Developer & WordPress Expert",
+      "knowsAbout": ["Web Development", "WordPress Development", "Custom WordPress Plugins", "Responsive Web Design", "SEO Optimization", "Front-end Development", "UI/UX Design"],
+      "description": "Passionate web developer specializing in creating stunning, responsive websites and custom WordPress solutions that drive results and exceed expectations."
+    }
+    </script>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="bg-animation"></div>
+    <div class="particles" id="particles"></div>
+
+    <header class="header" id="header">
+        <div class="logo"><span>IM</span></div>
+        <nav class="desktop-nav">
+            <ul class="nav-links">
+                <li><a href="#home" class="active" data-translate-key="navHome"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li><a href="#about" data-translate-key="navAbout"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills" data-translate-key="navSkills"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="#services" data-translate-key="navServices"><i class="fas fa-rocket"></i> Services</a></li>
+                <li><a href="#portfolio" data-translate-key="navPortfolio"><i class="fas fa-briefcase"></i>
+                        Portfolio</a></li>
+                <li><a href="#contact" data-translate-key="navContact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="language-switcher">
+            <div class="selected-lang">
+                <span class="lang-flag" id="selected-flag">🇬🇧</span>
+                <span class="lang-text" id="selected-text">EN</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <ul class="lang-options">
+                <li data-lang="en"><span class="lang-flag">🇬🇧</span> EN</li>
+                <li data-lang="fr"><span class="lang-flag">🇫🇷</span> FR</li>
+                <li data-lang="ar"><span class="lang-flag">🇲🇦</span> AR</li>
+            </ul>
+        </div>
+
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        <div class="mobile-nav" id="mobile-nav">
+            <ul class="nav-links">
+                <li><a href="#home" class="active" data-translate-key="navHome"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li><a href="#about" data-translate-key="navAbout"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills" data-translate-key="navSkills"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="#services" data-translate-key="navServices"><i class="fas fa-rocket"></i> Services</a></li>
+                <li><a href="#portfolio" data-translate-key="navPortfolio"><i class="fas fa-briefcase"></i>
+                        Portfolio</a></li>
+                <li><a href="#contact" data-translate-key="navContact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content animated-element">
+            <div class="profile-section animated-element slide-in-left">
+                <div class="abstract-hero-visual">
+                    <div class="cube-face cube-front"><i class="fas fa-code"></i></div>
+                    <div class="cube-face cube-back"><i class="fas fa-terminal"></i></div>
+                    <div class="cube-face cube-left"><i class="fas fa-laptop-code"></i></div>
+                    <div class="cube-face cube-right"><i class="fas fa-database"></i></div>
+                    <div class="cube-face cube-top"><i class="fas fa-cloud"></i></div>
+                    <div class="cube-face cube-bottom"><i class="fas fa-server"></i></div>
+                    <div class="cube-glow"></div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-element"><i class="fab fa-html5"></i></div>
+                    <div class="floating-element"><i class="fab fa-css3-alt"></i></div>
+                    <div class="floating-element"><i class="fab fa-js"></i></div>
+                    <div class="floating-element"><i class="fab fa-wordpress"></i></div>
+                </div>
+            </div>
+            <div class="hero-text animated-element slide-in-right">
+                <div class="hero-subtitle" data-translate-key="heroSubtitle">ABOUT ME</div>
+                <h1 class="hero-title">ILIAS EL MABRAK</h1>
+                <h2 class="hero-role"
+                    data-roles='["WEB DEVELOPMENT", "PLUGIN EXPERT", "RESPONSIVE DESIGNER", "SEO SPECIALIST"]'>
+                    <span aria-hidden="true"></span>
+                    <span class="sr-only">Web Development, Plugin Expert, Responsive Designer, SEO Specialist</span>
+                </h2>
+                <p class="hero-description" data-translate-key="heroDescription">Passionate web developer specializing
+                    in creating stunning, responsive websites, custom WordPress solutions, and performance-driven
+                    digital experiences that drive results and exceed expectations. I focus on **SEO optimization** and
+                    **custom plugin development** to ensure your online presence is both powerful and effective.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span
+                        class="tech-tag">JAVASCRIPT</span><span class="tech-tag">ELEMENTOR</span><span
+                        class="tech-tag">ACF</span><span class="tech-tag">SEO</span><span
+                        class="tech-tag">WORDPRESS</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary"><span data-translate-key="heroBtnWork">🔥 VIEW
+                            WORK</span> <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary"><span data-translate-key="heroBtnContact">💬 CONTACT
+                            ME</span> <i class="fas fa-paper-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text animated-element slide-in-left">
+                <h2 data-translate-key="aboutTitle">About Me</h2>
+                <p data-translate-key="aboutParagraph1">I'm a passionate web developer with over 5 years of experience
+                    creating digital experiences that make a difference. My journey began with a simple curiosity about
+                    how websites work, and it has evolved into a deep expertise in modern web technologies, **front-end
+                    development**, and **back-end solutions**.</p>
+                <p data-translate-key="aboutParagraph2">I specialize in crafting custom **WordPress solutions**,
+                    **responsive web designs**, and **performance-optimized websites** that not only look amazing but
+                    also deliver exceptional user experiences and rank well on search engines. My focus is on delivering
+                    **scalable and secure web development**.</p>
+                <p data-translate-key="aboutParagraph3">When I'm not coding, you'll find me exploring the latest web
+                    technologies, contributing to open-source projects, or sharing my knowledge with the developer
+                    community. I'm committed to continuous learning and delivering **high-quality web solutions**.</p>
+            </div>
+            <div class="stats-grid animated-element slide-in-right">
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label" data-translate-key="statProjects">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label" data-translate-key="statClients">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label" data-translate-key="statYears">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label" data-translate-key="statSupport">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="skills-content">
+            <h2 class="animated-element" data-translate-key="skillsTitle">Skills & Expertise</h2>
+            <p class="skills-subtitle animated-element" data-translate-key="skillsSubtitle">Technologies and tools I use
+                to bring ideas to life, from **front-end development** to **WordPress customization** and **SEO
+                strategies**.</p>
+            <div class="skills-grid">
+                <div class="skill-card animated-element">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3 data-translate-key="skill1Title">HTML/CSS</h3>
+                    <p data-translate-key="skill1Desc">Expert in semantic HTML5 and modern CSS3, including Flexbox,
+                        Grid, and responsive design principles for **pixel-perfect web layouts**.</p>
+                </div>
+                <div class="skill-card animated-element">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h3 data-translate-key="skill2Title">JavaScript</h3>
+                    <p data-translate-key="skill2Desc">Proficient in vanilla JavaScript, ES6+, DOM manipulation, and
+                        modern frameworks for interactive web experiences and **dynamic content development**.</p>
+                </div>
+                <div class="skill-card animated-element">
+                    <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+                    <h3 data-translate-key="skill3Title">WordPress Development</h3>
+                    <p data-translate-key="skill3Desc">Advanced **WordPress development** including custom themes,
+                        plugins, and complex site architectures, specializing in **Elementor and ACF integrations**.</p>
+                </div>
+                <div class="skill-card animated-element">
+                    <div class="skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3 data-translate-key="skill4Title">Custom Plugin Development</h3>
+                    <p data-translate-key="skill4Desc">Creating powerful **WordPress plugins** that extend functionality
+                        and solve unique business challenges, tailored to specific client needs.</p>
+                </div>
+                <div class="skill-card animated-element">
+                    <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3 data-translate-key="skill5Title">UI/UX Design</h3>
+                    <p data-translate-key="skill5Desc">Designing intuitive and beautiful user interfaces that provide
+                        exceptional user experiences and **enhance website usability**.</p>
+                </div>
+                <div class="skill-card animated-element">
+                    <div class="skill-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3 data-translate-key="skill6Title">Performance & SEO</h3>
+                    <p data-translate-key="skill6Desc">Optimizing websites for speed, **search engine optimization
+                        (SEO)**, and accessibility to ensure the best possible user experience and **higher search
+                        rankings**.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="services-content">
+            <h2 class="animated-element" data-translate-key="servicesTitle">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card animated-element">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3 data-translate-key="service1Title">Custom Web Development</h3>
+                    <p data-translate-key="service1Desc">Custom websites built from scratch using modern technologies.
+                        Responsive, fast, and optimized for all devices and browsers, delivering **unique online
+                        presence**.</p>
+                </div>
+                <div class="service-card animated-element">
+                    <div class="service-icon"><i class="fas fa-wrench"></i></div>
+                    <h3 data-translate-key="service2Title">WordPress Solutions</h3>
+                    <p data-translate-key="service2Desc">Expert **WordPress development** including custom themes,
+                        plugins, and complex site functionality tailored to your needs, from **e-commerce to corporate
+                        sites**.</p>
+                </div>
+                <div class="service-card animated-element">
+                    <div class="service-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3 data-translate-key="service3Title">SEO Optimization</h3>
+                    <p data-translate-key="service3Desc">Complete **SEO audits** and **on-page/off-page optimization**
+                        to improve your website's visibility and ranking in search engines, driving **organic traffic**.
+                    </p>
+                </div>
+                <div class="service-card animated-element">
+                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                    <h3 data-translate-key="service4Title">Website Performance Optimization</h3>
+                    <p data-translate-key="service4Desc">Speed up your website with advanced optimization techniques,
+                        caching, and performance monitoring, ensuring **fast loading times** and better user experience.
+                    </p>
+                </div>
+                <div class="service-card animated-element">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 data-translate-key="service5Title">Responsive Web Design</h3>
+                    <p data-translate-key="service5Desc">Mobile-first design approach ensuring your website looks
+                        perfect on all devices and screen sizes, providing a **seamless user experience**.</p>
+                </div>
+                <div class="service-card animated-element">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-translate-key="service6Title">Website Security & Maintenance</h3>
+                    <p data-translate-key="service6Desc">Comprehensive security solutions to protect your website from
+                        threats and ensure data integrity, along with **ongoing maintenance and updates**.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-content">
+            <h2 class="animated-element" data-translate-key="portfolioTitle">Featured Projects</h2>
+            <div class="portfolio-grid">
+                <div class="project-card animated-element">
+                    <div class="project-image"><img src="assets/offre-sntl-assurance.jpg"
+                            alt="SNTL Group Assurances - Custom WordPress Insurance Platform" loading="lazy"></div>
+                    <div class="project-info">
+                        <h3>SNTL Group Assurances</h3>
+                        <p data-translate-key="project1Desc">Developed a custom **WordPress platform** for SNTL
+                            Assurances, enabling online policy subscriptions at attractive rates. This project focused
+                            on **secure user experience** and **efficient service delivery**.</p>
+                        <div class="project-links"><a href="https://www.sntlassurances.ma/" target="_blank"
+                                class="project-btn"><span data-translate-key="viewProject">View Project</span> <i
+                                    class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                </div>
+                <div class="project-card animated-element">
+                    <div class="project-image"><img src="assets/anre.jpg"
+                            alt="ANRE - National Electricity Regulatory Authority Website Development" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>ANRE - Autorité Nationale de Régulation de l’Electricité</h3>
+                        <p data-translate-key="project2Desc">Designed and developed the official website for ANRE, a
+                            public legal entity with financial autonomy. The site provides comprehensive information on
+                            electricity sector regulation, focusing on **transparency and public access to
+                            information**.</p>
+                        <div class="project-links"><a href="https://anre.ma/" target="_blank" class="project-btn"><span
+                                    data-translate-key="viewProject">View Project</span> <i
+                                    class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                </div>
+                <div class="project-card animated-element">
+                    <div class="project-image"><img src="assets/inves.jpg"
+                            alt="Le CRI Fès-Meknès - Regional Investment Center Web Platform" loading="lazy"></div>
+                    <div class="project-info">
+                        <h3>Le CRI Fès-Meknès</h3>
+                        <p data-translate-key="project3Desc">Developed the online presence for the Regional Investment
+                            Center of Fès-Meknès, a platform dedicated to supporting and facilitating investment
+                            projects in the region. Focused on **investor resources and regional development**.</p>
+                        <div class="project-links"><a href="https://fesmeknesinvest.ma/" target="_blank"
+                                class="project-btn"><span data-translate-key="viewProject">View Project</span> <i
+                                    class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                </div>
+                <div class="project-card animated-element">
+                    <div class="project-image"><img src="assets/chaabi.PNG"
+                            alt="CHAABI LLD - Long-Term Car Rental Solutions Website" loading="lazy"></div>
+                    <div class="project-info">
+                        <h3>CHAABI LLD</h3>
+                        <p data-translate-key="project4Desc">Created a robust website for CHAABI LLD, offering long-term
+                            car rental solutions for large enterprises, SMEs, and professionals. The platform
+                            streamlines mobility management with **user-friendly interfaces** and **service
+                            information**.</p>
+                        <div class="project-links"><a href="https://www.chaabilld.ma/" target="_blank"
+                                class="project-btn"><span data-translate-key="viewProject">View Project</span> <i
+                                    class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                </div>
+                <div class="project-card animated-element">
+                    <div class="project-image"><img src="assets/forma.png"
+                            alt="FBI Formation Brevetage Immobilier - Real Estate Training Platform" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>FBI Formation Brevetage Immobilier</h3>
+                        <p data-translate-key="project5Desc">Developed the online portal for FBI Formation Brevetage
+                            Immobilier, a key player in real estate training. This platform supports their vision to
+                            contribute to the economic development through specialized real estate education and
+                            **professional certification**.</p>
+                        <div class="project-links"><a href="https://forma-immo.com/" target="_blank"
+                                class="project-btn"><span data-translate-key="viewProject">View Project</span> <i
+                                    class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                </div>
+                <div class="project-card animated-element">
+                    <div class="project-image"><img src="assets/expert.jpeg"
+                            alt="Arg Immo Agence Immobiliere Marrakech - Real Estate Agency Website" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Arg Immo Agence Immobiliere Marrakech</h3>
+                        <p data-translate-key="project6Desc">Created the commercial interface for Arg Immo, a real
+                            estate agency in Marrakech. This platform facilitates the buying and selling of properties,
+                            offering a seamless experience for clients looking for **real estate opportunities**.</p>
+                        <div class="project-links"><a href="https://expert.forma-immo.com/" target="_blank"
+                                class="project-btn"><span data-translate-key="viewProject">View Project</span> <i
+                                    class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                </div>
+                <div class="project-card animated-element">
+                    <div class="project-image"><img src="assets/road.jpg"
+                            alt="Road X Service - Professional Convoyage and Logistics Website" loading="lazy"></div>
+                    <div class="project-info">
+                        <h3>CONVOYAGES - Road X Service</h3>
+                        <p data-translate-key="project7Desc">Developed the website for Road X Service, specializing in
+                            professional convoyage missions for diverse clients, including individuals and businesses
+                            (up to 3.5T). The site provides information on their **logistics and transport services**.
+                        </p>
+                        <div class="project-links"><a href="https://roadxservice.com/" target="_blank"
+                                class="project-btn"><span data-translate-key="viewProject">View Project</span> <i
+                                    class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <div class="contact-info animated-element slide-in-left">
+                <h2 data-translate-key="contactTitle">Let's Work Together</h2>
+                <p class="contact-description" data-translate-key="contactDescription">Ready to bring your vision to
+                    life? I'd love to hear about your project and discuss how we can create something amazing together,
+                    from **custom web development** to **SEO strategies**.</p>
+                <div class="contact-details">
+                    <div class="contact-item"><span class="icon"><i
+                                class="fas fa-envelope"></i></span><span>ilias.elmabrak16@gmail.com</span></div>
+                    <div class="contact-item"><span class="icon"><i class="fas fa-phone-alt"></i></span><span>+212 6 25
+                            35 08 26</span></div>
+                    <div class="contact-item"><span class="icon"><i class="fas fa-map-marker-alt"></i></span><span
+                            data-translate-key="contactLocation">Safi-Marrakech, Morocco</span></div>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:ilias.elmabrak16@gmail.com" class="social-link"
+                        aria-label="Email Ilias El Mabrak"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/elmabrak-ilias-20b245193/" class="social-link"
+                        aria-label="Ilias El Mabrak LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/IliasPHP" class="social-link"
+                        aria-label="Ilias El Mabrak GitHub Profile"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-form animated-element slide-in-right">
+                <form id="contactForm" action="https://formspree.io/f/xpwjdzey" method="POST">
+                    <div class="form-group">
+                        <label for="name" data-translate-key="formName">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate-key="formEmail">Your Email</label>
+                        <input type="email" id="email" name="_replyto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-translate-key="formSubject">Subject</label>
+                        <input type="text" id="subject" name="_subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate-key="formMessage">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-translate-key="formButton">🚀 Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Ilias El Mabrak</h3>
+                <p data-translate-key="footerDescription">Passionate web developer creating digital experiences that
+                    make a difference. Let's build something amazing together, focusing on **WordPress development**,
+                    **responsive design**, and **SEO optimization**.</p>
+                <div class="social-links">
+                    <a href="mailto:ilias.elmabrak16@gmail.com" class="social-link"
+                        aria-label="Email Ilias El Mabrak"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/elmabrak-ilias-20b245193/" class="social-link"
+                        aria-label="Ilias El Mabrak LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/IliasPHP" class="social-link"
+                        aria-label="Ilias El Mabrak GitHub Profile"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate-key="footerServicesTitle">Services</h4>
+                <ul>
+                    <li><a href="#services" data-translate-key="footerService1">Web Development</a></li>
+                    <li><a href="#services" data-translate-key="footerService2">WordPress Solutions</a></li>
+                    <li><a href="#services" data-translate-key="footerService3">SEO Optimization</a></li>
+                    <li><a href="#services" data-translate-key="footerService4">Performance Tuning</a></li>
+                    <li><a href="#services" data-translate-key="footerService5">Custom Plugin Development</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate-key="footerLinksTitle">Quick Links</h4>
+                <ul>
+                    <li><a href="#about" data-translate-key="footerLink1">About Me</a></li>
+                    <li><a href="#portfolio" data-translate-key="footerLink2">My Portfolio</a></li>
+                    <li><a href="#skills" data-translate-key="footerLink3">My Skills</a></li>
+                    <li><a href="#contact" data-translate-key="footerLink4">Contact Ilias</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate-key="footerContactTitle">Contact Info</h4>
+                <ul>
+                    <li><a href="mailto:ilias.elmabrak16@gmail.com" data-translate-key="footerContact1">Email Me</a>
+                    </li>
+                    <li><a href="tel:+212625350826" data-translate-key="footerContact2">Call Me</a></li>
+                    <li data-translate-key="footerContact3">Safi-Marrakech, Morocco</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ilias El Mabrak. <span data-translate-key="footerRights">All rights reserved.</span></p>
+            <p data-translate-key="footerMadeWith">Made with ❤️ and lots of ☕</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

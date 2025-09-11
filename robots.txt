@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iliasdev-portfolio-plum.vercel.app/sitemap.xml
