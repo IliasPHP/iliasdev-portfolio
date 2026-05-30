@@ -1851,3 +1851,67 @@ html {
         transform: rotate(360deg);
     }
 }
+
+
+/* Mobile Navigation Background Fix */
+@media (max-width: 768px) {
+    .mobile-nav {
+        /* This adds a deep dark background */
+        background-color: rgba(10, 15, 30, 0.98);
+
+        /* This adds the blur effect (Glassmorphism) */
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+
+        /* Ensures it covers the full side menu */
+        width: 280px;
+        /* Adjust width as needed */
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* Hidden by default */
+        display: flex;
+        flex-direction: column;
+        padding: 80px 20px;
+        transition: 0.4s ease-in-out;
+        z-index: 999;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* When the menu is open */
+    .mobile-nav.active {
+        right: 0;
+    }
+
+    /* Styling the links inside the mobile menu */
+    .mobile-nav .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .mobile-nav .nav-links li a {
+        font-size: 1.1rem;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Fix for Arabic (RTL) Mobile Menu */
+    html[dir="rtl"] .mobile-nav {
+        right: auto;
+        left: -100%;
+        border-left: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    html[dir="rtl"] .mobile-nav.active {
+        left: 0;
+    }
+}
