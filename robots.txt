@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://iliasdev-portfolio-plum.vercel.app/sitemap.xml
+
+Sitemap: https://https://www.iliaselmabrak.com/sitemap.xml
