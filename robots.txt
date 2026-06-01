@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Host: www.iliaselmabrak.com
 Sitemap: https://www.iliaselmabrak.com/sitemap.xml
